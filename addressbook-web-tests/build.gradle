@@ -23,6 +23,7 @@ repositories {
 dependencies {
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:28.1-jre'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.0.0-alpha-4'
 
     // Use TestNG framework, also requires calling test.useTestNG() below
     testImplementation 'org.testng:testng:7.0.0'
@@ -30,7 +31,7 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClassName = 'sandbox.App'
+    mainClassName = 'addressbook.web.tests.App'
 }
 
 test {
